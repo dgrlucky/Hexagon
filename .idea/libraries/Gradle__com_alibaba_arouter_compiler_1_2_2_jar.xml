@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.alibaba:arouter-compiler:1.2.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/arouter-compiler/1.2.2/688a1bbb9d27a0750a20a2bdcfc0a6cb3e0744b2/arouter-compiler-1.2.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.alibaba/arouter-compiler/1.2.2/ca7df1c7a566f20e3012fb8ca1db3338677a7c2d/arouter-compiler-1.2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

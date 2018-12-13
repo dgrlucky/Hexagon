@@ -28,4 +28,5 @@ import android.support.v4.app.Fragment;
  * ================================================
  */
 public interface FragmentLifecycleable extends Lifecycleable<Lifecycle.Event> {
+
 }

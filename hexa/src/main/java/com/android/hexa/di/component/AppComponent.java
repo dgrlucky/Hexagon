@@ -22,7 +22,9 @@ import com.android.hexa.base.delegate.AppDelegate;
 import com.android.hexa.di.module.AppModule;
 import com.android.hexa.di.module.ClientModule;
 import com.android.hexa.di.module.GlobalConfigModule;
+import com.android.hexa.integration.ConfigModule;
 import com.android.hexa.integration.cache.Cache;
+import com.android.hexa.utils.ArmsUtils;
 import com.google.gson.Gson;
 
 import java.io.File;

@@ -18,7 +18,7 @@ public class AppExecutors {
     private final Executor mainThread;
 
     @Inject
-    public AppExecutors(Executor diskIO, Executor networkIO, Executor mainThread) {
+    public AppExecutors() {
         this.diskIO = Executors.newSingleThreadExecutor();
         this.networkIO = Executors.newFixedThreadPool(3);
         this.mainThread = new MainThreadExecutor();

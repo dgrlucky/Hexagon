@@ -51,12 +51,12 @@ import me.jessyan.rxerrorhandler.handler.listener.ResponseErrorListener;
  */
 @Module
 public class GlobalConfigModule {
-    private ResponseErrorListener mErrorListener;
     private File mCacheFile;
-    private ClientModule.RxCacheConfiguration mRxCacheConfiguration;
-    private AppModule.GsonConfiguration mGsonConfiguration;
     private Cache.Factory mCacheFactory;
     private ExecutorService mExecutorService;
+    private ResponseErrorListener mErrorListener;
+    private AppModule.GsonConfiguration mGsonConfiguration;
+    private ClientModule.RxCacheConfiguration mRxCacheConfiguration;
 
     private GlobalConfigModule(Builder builder) {
         this.mErrorListener = builder.responseErrorListener;

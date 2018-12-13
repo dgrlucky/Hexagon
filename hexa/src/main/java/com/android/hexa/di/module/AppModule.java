@@ -63,9 +63,9 @@ public abstract class AppModule {
     }
 
     /**
-     * 之前 {@link AppManager} 使用 Dagger 保证单例, 只能使用 {@link AppComponent#appManager()} 访问
+     * 之前 {@link AppManager} 使用 Dagger 保证单例, 只能使用访问
      * 现在直接将 AppManager 独立为单例类, 可以直接通过静态方法 {@link AppManager#getAppManager()} 访问, 更加方便
-     * 但为了不影响之前使用 {@link AppComponent#appManager()} 获取 {@link AppManager} 的项目, 所以暂时保留这种访问方式
+     * 但为了不影响之前使用,获取 {@link AppManager} 的项目, 所以暂时保留这种访问方式
      *
      * @param application
      * @return
@@ -81,6 +81,7 @@ public abstract class AppModule {
 
     @Singleton
     @Provides
+    @SuppressWarnings("unchecked")
     static Cache<String, Object> provideExtras(Cache.Factory cacheFactory) {
         return cacheFactory.build(CacheType.EXTRAS);
     }

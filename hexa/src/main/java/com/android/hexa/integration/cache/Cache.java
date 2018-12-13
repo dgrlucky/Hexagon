@@ -20,6 +20,8 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 
+import com.android.hexa.di.module.GlobalConfigModule;
+
 import java.util.Set;
 
 

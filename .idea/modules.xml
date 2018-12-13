@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CommonRes/CommonRes.iml" filepath="$PROJECT_DIR$/CommonRes/CommonRes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonSDK/CommonSDK.iml" filepath="$PROJECT_DIR$/CommonSDK/CommonSDK.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CommonService/CommonService.iml" filepath="$PROJECT_DIR$/CommonService/CommonService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Hexagon.iml" filepath="$PROJECT_DIR$/Hexagon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arms/arms.iml" filepath="$PROJECT_DIR$/arms/arms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/arms_glide/arms_glide.iml" filepath="$PROJECT_DIR$/arms_glide/arms_glide.iml" />
+      <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hexa/hexa.iml" filepath="$PROJECT_DIR$/hexa/hexa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_gank/module_gank.iml" filepath="$PROJECT_DIR$/module_gank/module_gank.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_gold/module_gold.iml" filepath="$PROJECT_DIR$/module_gold/module_gold.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_other/module_other.iml" filepath="$PROJECT_DIR$/module_other/module_other.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module_zhihu/module_zhihu.iml" filepath="$PROJECT_DIR$/module_zhihu/module_zhihu.iml" />
+    </modules>
+  </component>
+</project>

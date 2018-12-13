@@ -1,0 +1,1 @@
+include ':app',':arms',':demo', ':arms_glide', ':CommonSDK', ':CommonService', ':CommonRes', ':module_zhihu', ':module_gank', ':module_other', ':hexa', 'module_gold'

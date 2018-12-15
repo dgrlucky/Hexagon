@@ -3,45 +3,49 @@ package com.android.hexa.mvvp;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.Lifecycle;
-import android.arch.lifecycle.LifecycleObserver;
 import android.arch.lifecycle.LifecycleOwner;
 import android.arch.lifecycle.OnLifecycleEvent;
 import android.support.annotation.NonNull;
 
-public class BaseViewModel extends AndroidViewModel implements LifecycleObserver {
+public class BaseViewModel extends AndroidViewModel implements IBaseViewModel {
 
     public BaseViewModel(@NonNull Application application) {
         super(application);
     }
 
     @OnLifecycleEvent(Lifecycle.Event.ON_ANY)
-    void onAny(LifecycleOwner owner, Lifecycle.Event event) {
+    public void onAny(LifecycleOwner owner, Lifecycle.Event event) {
 
     }
 
-    @OnLifecycleEvent(Lifecycle.Event.ON_CREATE)
-    void onCreate(LifecycleOwner owner) {
+    @Override
+    public void onCreate(LifecycleOwner owner) {
         owner.getLifecycle().addObserver(this);
     }
 
-    @OnLifecycleEvent(Lifecycle.Event.ON_START)
-    void onStart() {
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_STOP)
-    void onStop() {
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_RESUME)
-    void onResume() {
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_PAUSE)
-    void onPause() {
-    }
-
-    @OnLifecycleEvent(Lifecycle.Event.ON_DESTROY)
-    void onDestroy(LifecycleOwner owner) {
+    @Override
+    public void onDestroy(LifecycleOwner owner) {
         owner.getLifecycle().removeObserver(this);
     }
+
+    @Override
+    public void onStart() {
+
+    }
+
+    @Override
+    public void onResume() {
+
+    }
+
+    @Override
+    public void onPause() {
+
+    }
+
+    @Override
+    public void onStop() {
+
+    }
+
 }

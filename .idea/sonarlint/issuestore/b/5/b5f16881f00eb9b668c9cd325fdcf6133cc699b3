@@ -1,0 +1,4 @@
+
+Fsquid:S1068",Remove this unused "mContext" private field.(»úÅ¾øÿÿÿÿ
+qsquid:S1450"WRemove the "mContext" field and declare it as a local variable in the relevant methods.(»úÅ¾øÿÿÿÿ
+esquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(©ž‹¾ÿÿÿÿÿ

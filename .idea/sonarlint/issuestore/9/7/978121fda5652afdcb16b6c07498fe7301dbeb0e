@@ -1,0 +1,5 @@
+
+Qsquid:S1068"0Remove this unused "mApplication" private field.(«Æ•Õúÿÿÿÿ8â€Äú,
+Rsquid:S1068"1Remove this unused "mAppComponent" private field.(®ÇØÒÿÿÿÿÿ8â€Äú,
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ºÚÑÒşÿÿÿÿ8â€Äú,
+Zsquid:S1155">Use isEmpty() to check whether the collection is empty or not.(†»üı8â€Äú,

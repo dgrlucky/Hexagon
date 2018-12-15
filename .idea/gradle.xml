@@ -8,18 +8,8 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/CommonRes" />
-            <option value="$PROJECT_DIR$/CommonSDK" />
-            <option value="$PROJECT_DIR$/CommonService" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/arms" />
-            <option value="$PROJECT_DIR$/arms_glide" />
-            <option value="$PROJECT_DIR$/demo" />
-            <option value="$PROJECT_DIR$/hexa" />
-            <option value="$PROJECT_DIR$/module_gank" />
-            <option value="$PROJECT_DIR$/module_gold" />
-            <option value="$PROJECT_DIR$/module_other" />
-            <option value="$PROJECT_DIR$/module_zhihu" />
+            <option value="$PROJECT_DIR$/app_dragon" />
+            <option value="$PROJECT_DIR$/dragon" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

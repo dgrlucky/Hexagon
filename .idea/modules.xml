@@ -7,9 +7,11 @@
       <module fileurl="file://$PROJECT_DIR$/CommonService/CommonService.iml" filepath="$PROJECT_DIR$/CommonService/CommonService.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hexagon.iml" filepath="$PROJECT_DIR$/Hexagon.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_dragon/app_dragon.iml" filepath="$PROJECT_DIR$/app_dragon/app_dragon.iml" />
       <module fileurl="file://$PROJECT_DIR$/arms/arms.iml" filepath="$PROJECT_DIR$/arms/arms.iml" />
       <module fileurl="file://$PROJECT_DIR$/arms_glide/arms_glide.iml" filepath="$PROJECT_DIR$/arms_glide/arms_glide.iml" />
       <module fileurl="file://$PROJECT_DIR$/demo/demo.iml" filepath="$PROJECT_DIR$/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dragon/dragon.iml" filepath="$PROJECT_DIR$/dragon/dragon.iml" />
       <module fileurl="file://$PROJECT_DIR$/hexa/hexa.iml" filepath="$PROJECT_DIR$/hexa/hexa.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_gank/module_gank.iml" filepath="$PROJECT_DIR$/module_gank/module_gank.iml" />
       <module fileurl="file://$PROJECT_DIR$/module_gold/module_gold.iml" filepath="$PROJECT_DIR$/module_gold/module_gold.iml" />

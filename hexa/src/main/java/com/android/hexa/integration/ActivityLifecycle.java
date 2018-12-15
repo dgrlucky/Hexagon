@@ -74,10 +74,8 @@ public class ActivityLifecycle implements Application.ActivityLifecycleCallbacks
         boolean isNotAdd = false;
         if (activity.getIntent() != null)
             isNotAdd = activity.getIntent().getBooleanExtra(AppManager.IS_NOT_ADD_ACTIVITY_LIST, false);
-
         if (!isNotAdd)
             mAppManager.addActivity(activity);
-
         //配置ActivityDelegate
         if (activity instanceof IActivity) {
             ActivityDelegate activityDelegate = fetchActivityDelegate(activity);
@@ -90,7 +88,6 @@ public class ActivityLifecycle implements Application.ActivityLifecycleCallbacks
             }
             activityDelegate.onCreate(savedInstanceState);
         }
-
         registerFragmentCallbacks(activity);
     }
 

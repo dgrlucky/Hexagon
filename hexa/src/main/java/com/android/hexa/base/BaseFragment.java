@@ -16,6 +16,8 @@
 package com.android.hexa.base;
 
 import android.arch.lifecycle.Lifecycle;
+import android.arch.lifecycle.LifecycleOwner;
+import android.arch.lifecycle.LifecycleRegistry;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -45,13 +47,15 @@ import io.reactivex.subjects.Subject;
  * @see <a href="https://github.com/JessYanCoding/MVPArms/wiki">请配合官方 Wiki 文档学习本框架</a>
  * @see <a href="https://github.com/JessYanCoding/MVPArms/wiki/UpdateLog">更新日志, 升级必看!</a>
  * @see <a href="https://github.com/JessYanCoding/MVPArms/wiki/Issues">常见 Issues, 踩坑必看!</a>
- * @see <a href="https://github.com/JessYanCoding/ArmsComponent/wiki">MVPArms 官方组件化方案 ArmsComponent, 进阶指南!</a>
+ * @see <a href="https://github.com/JessYanCoding/ArmsComponent/wiki">MVPArms 官方组件化方案
+ * ArmsComponent, 进阶指南!</a>
  * Created by JessYan on 22/03/2016
  * <a href="mailto:jess.yan.effort@gmail.com">Contact me</a>
  * <a href="https://github.com/JessYanCoding">Follow me</a>
  * ================================================
  */
-public abstract class BaseFragment<P extends IPresenter> extends Fragment implements IFragment, FragmentLifecycleable {
+public abstract class BaseFragment<P extends IPresenter> extends Fragment implements
+        LifecycleOwner, IFragment, FragmentLifecycleable {
     protected final String TAG = this.getClass().getSimpleName();
     private final BehaviorSubject<Lifecycle.Event> mLifecycleSubject = BehaviorSubject.create();
     private Cache<String, Object> mCache;
@@ -59,12 +63,14 @@ public abstract class BaseFragment<P extends IPresenter> extends Fragment implem
     @Inject
     @Nullable
     protected P mPresenter;//如果当前页面逻辑简单, Presenter 可以为 null
+    private LifecycleRegistry mLifecycleRegistry = new LifecycleRegistry(this);
 
     @NonNull
     @Override
     public synchronized Cache<String, Object> provideCache() {
         if (mCache == null) {
-            mCache = ArmsUtils.obtainAppComponentFromContext(getActivity()).cacheFactory().build(CacheType.FRAGMENT_CACHE);
+            mCache = ArmsUtils.obtainAppComponentFromContext(getActivity()).cacheFactory().build
+                    (CacheType.FRAGMENT_CACHE);
         }
         return mCache;
     }
@@ -83,14 +89,16 @@ public abstract class BaseFragment<P extends IPresenter> extends Fragment implem
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
         return initView(inflater, container, savedInstanceState);
     }
 
     @Override
     public void onDestroy() {
         super.onDestroy();
-        if (mPresenter != null) mPresenter.onDestroy();//释放资源
+        if (mPresenter != null)
+            mPresenter.onDestroy();//释放资源
         this.mPresenter = null;
     }
 
